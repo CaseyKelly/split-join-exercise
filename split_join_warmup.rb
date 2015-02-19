@@ -18,11 +18,11 @@ def generate_an_array_of_teams(team_list)
 end
 
 def number_of_teams(team_list)
-  team_list.split(', ').countg
+  team_list.split(', ').count
 end
 
 def return_australia(team_list)
-
+  team_list.split(', ')[6]
 end
 
 def starts_with_C(team_list)
