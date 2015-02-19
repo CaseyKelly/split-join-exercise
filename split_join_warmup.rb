@@ -18,7 +18,7 @@ def generate_an_array_of_teams(team_list)
 end
 
 def number_of_teams(team_list)
-
+  team_list.split(', ').countg
 end
 
 def return_australia(team_list)
