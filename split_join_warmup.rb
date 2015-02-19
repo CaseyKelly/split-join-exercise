@@ -26,7 +26,7 @@ def return_australia(team_list)
 end
 
 def starts_with_C(team_list)
-
+  team_list.split(', ').select { |person| person[0,1] == 'C' }
 end
 
 def block_string_to_single_line(long_string)
