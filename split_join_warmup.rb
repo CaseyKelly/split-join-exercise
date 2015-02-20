@@ -34,7 +34,7 @@ def block_string_to_single_line(long_string)
 end
 
 def capitalize_every_third_word(long_string)
-
+  block_string_to_single_line(long_string.downcase).split.each_slice(3).flat_map{|a,b,c| [a.capitalize, b, c]}.join(' ')
 end
 
 check("goal method", goal(goal_message) == "GOOOOOOOAL!!!!GOOOOOOOAL!!!!")
